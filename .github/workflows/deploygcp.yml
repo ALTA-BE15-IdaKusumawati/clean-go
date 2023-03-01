@@ -20,6 +20,7 @@ jobs:
           script: |
             cd /home/kusuma/clean-go
             git pull origin main
+            sudo chmod 777 /var/run/docker.sock
             docker stop beContainer
             docker rm beContainer
             docker rmi be15-images
