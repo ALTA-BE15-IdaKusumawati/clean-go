@@ -14,6 +14,8 @@ func main() {
 	db := database.InitDBMySql(*cfg)
 	// db := database.InitDBPosgres(*cfg)
 
+	//komen
+
 	// auto migrate gorm
 	database.InitialMigration(db)
 
